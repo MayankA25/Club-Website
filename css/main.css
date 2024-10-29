@@ -117,15 +117,86 @@
 #string{
     /* background-color: red; */
     padding: 2vw 0;
+    width: 73vw;
+    height: 21.1vh;
+    margin: auto;
+    
 }
 
 #string svg{
     margin: auto;
     /* background-color: green; */
-    width: 1400px;
-    height: 300px;
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #string svg path{
     stroke-width: 0.2vw;
+}
+
+
+
+
+.events{
+    text-align: center;
+}
+
+.events h1{
+    padding: 1vw 0;
+    font-size: 3.5vw;
+    color: #f8e1a8;
+}
+
+.events .events-container{
+    width: 85%;
+    margin: auto;
+    padding: 2vw 1vw;
+}
+
+.events .events-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.events .events-container .event{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    /* background-color: rgba(255,255,255,0.2); */
+    border-radius: 1vw;
+    padding: 2vw 3vw;
+    font-size: 2vw;
+    margin: 2vw 0;
+    position: relative;
+}
+.events .events-container .event::before{
+    content: ' ';
+    position: absolute;
+    background-image: url('../imgs/ai-club-logo.png');
+    background-size: contain;
+    top: 0;
+    left: 0;
+    width: 3vw;
+    height: 3vw;
+    transform: translate(-50%, -50%);
+    /* background-color: red; */
+}
+.events .events-container .event img{
+    width: 15vw;
+    border-radius: 1vw;
+}
+.events .events-container .event p{
+    color: rgb(255, 255, 225);
+}
+.left{
+    text-align: right;
+}
+.right{
+    flex-direction: row-reverse;
+    text-align: left;
 }
