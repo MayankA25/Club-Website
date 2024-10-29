@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Luckiest+Guy&family=Roboto+Slab:wght@100..900&family=Rubik+Mono+One&family=Secular+One&family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Luckiest+Guy&family=Spicy+Rice&family=Unlock&display=swap');
+
+@keyframes blinking {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+.main-content {
+    /* position: absolute; */
+    /* position: fixed; */
+    width: 100vw;
+    /* height: 100vh; */
+    background-color: black;
+}
+
+.main-content main {
+    /* position: absolute; */
+    top: 0;
+    /* height: 100%; */
+    color: white;
+    /* background-color: blue; */
+    font-family: "Luckiest Guy", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.intro {
+    /* background-color: red; */
+    height: 90%;
+    padding: 3vw 0;
+    text-align: center;
+    /* position: relative; */
+}
+
+.intro h1 {
+    
+    font-size: 21vw;
+    /* background-color: green; */
+    color: #f8e1a8;
+    /* overflow: hidden; */
+    margin: 1vw 0;
+}
+
+.intro h1 span {
+
+    opacity: 0
+}
+
+
+
+.intro .desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2vw 0;
+    /* background-color: pink; */
+    bottom: 0;
+    font-size: 1.5vw;
+}
+
+.intro .desc h2 {
+    opacity: 0;
+    /* background-color: blueviolet; */
+    margin: 1vw 0 0 0;
+    font-family: "Unlock", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+.intro .desc .container {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    font-size: 4vw;
+    margin: 2vw 0 0 0;
+    opacity: 0;
+}
+
+
+
+
+
+
+.video{
+    padding: 1vw 0;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* .video video{
+    /* width: 20%; */
+    /* width: 90%; */
+/* } */ 
+
+.video video{
+    width: 100%;
+}
+
+#string{
+    /* background-color: red; */
+    padding: 2vw 0;
+}
+
+#string svg{
+    margin: auto;
+    /* background-color: green; */
+    width: 1400px;
+    height: 300px;
+}
+
+#string svg path{
+    stroke-width: 0.2vw;
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    overflow-x: hidden;
+    cursor: none;
+    scroll-behavior: smooth;
+}
+
+.preloader{
+    position: absolute;
+    z-index: 300;
+    width: 100vw;
+    height: 105vh;
+    /* background-size: cover; */
+    display: flex;
+    /* z-index: -3; */
+}
+
+.preloader .box{
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 5vw;
+    font-size: 5vw;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.preloader .box h1{
+    position: absolute;
+    background-color: #f8cb88;
+    z-index: 3;
+}
+
+
+.preloader .box h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 0.2vw black;
+}
+
+.preloader .box h1:nth-child(2){
+    color: black;
+    clip-path: polygon(0 1%, 14% 0, 35% 0, 54% 0, 84% 0, 100% 0, 100% 40%, 100% 58%, 100% 79%, 100% 100%, 0 100%);
+}
+
+
+
+
+.preloader .box-1{
+    position: absolute;
+    left: 0;
+    background-color: #f8cb88;
+    justify-content: right;
+    width: 45%;
+}
+.preloader .box .progress-bar{
+    width: 100%;
+    height: 0.1vw;
+    background-color: black;
+    position: absolute;
+    left: 0;
+}
+
+
+.preloader .box-2{
+    position: absolute;
+    right: 0;
+    background-color: #f8cb88;
+    justify-content: left;
+    width: 55%;
+}

@@ -1,0 +1,108 @@
+header{
+    opacity: 0;
+    z-index: 200;
+    color: white;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    font-family: "Unlock", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header .nav-1{
+    padding: 0.5vw 0;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(25px);
+}
+header .nav-1 .short{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .nav-1 .short img{
+    width: 5vw;
+}
+header .nav-1 .short i{
+    font-size: 3vw;
+    opacity: 0;
+    /* cursor: pointer; */
+    /* background-color: red; */
+}
+
+
+.nav-2{
+    z-index: 200;
+    position: sticky;
+    /* right: 0; */
+    top: 0;
+    background-color: rgba(0,0,0, 0.2);
+    backdrop-filter: blur(25px);
+    width: 0%;
+    height: 100%;
+    /* background-color: white; */
+    padding: 10vw 0vw;
+    /* display: none; */
+    display: none;
+    /* pointer-events: none; */
+
+}
+.nav-2 i{
+    /* cursor: pointer; */
+    position: absolute;
+    top: 4%;
+    right: 10%;
+    font-size: 2.5vw;
+    border-radius: 90px;
+    /* display: none; */
+    opacity: 0;
+    color: white;
+}
+ .nav-2 i:hover{
+    color: #fff1db;
+    transition: all 0.3s;
+    font-size: 3vw;
+}
+
+.nav-2 i:not(:hover){
+    font-size: 2.5vw;
+    transition: all 0.3s;
+}
+
+.nav-2 .full{
+    padding: 1vw 0;
+    /* background-color: red; */
+    width: 80%;
+    margin: auto;
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.nav-2 .full h1{
+    opacity: 0;
+    font-size: 4vw;
+    margin-bottom: 3vw;
+    overflow: hidden;
+    
+}
+.nav-2 .full h1 a{
+    /* left: 0; */
+    color: white;
+    text-decoration: none;
+    cursor: none;
+}
+.nav-2 .full h1:hover{
+    transition: all 0.3s;
+    font-size: 4.5vw;
+    /* transform: scale(1.1); */
+}
+.nav-2 .full h1:not(:hover){
+    transition: all 0.3s;
+    /* transform: scale(1); */
+    font-size: 4vw;
+}
+.nav-2 .full h1 a:hover{
+    color: #fff1db;
+}
+

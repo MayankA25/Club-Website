@@ -1,0 +1,15 @@
+#cursor{
+    z-index: 1000000;
+    /* position: fixed; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #CC2B52;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 90px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    cursor: none;
+    
+}
