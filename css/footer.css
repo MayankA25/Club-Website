@@ -8,10 +8,19 @@ footer{
     align-items: center;
 }
 
-.divider #string{
-    width: 50%;
-    height: 0.2vw;
-    background-color: white;
+.divider .string{
+    /* background-color: red; */
+    width:50%
+}
+
+.divider .string svg{
+    width: 100%;
+    height: 100%;
+    /* background-color: green; */
+}
+
+.divider .string svg path{
+    stroke-width: 0.2vw;
 }
 
 .divider img{
