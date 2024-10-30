@@ -114,28 +114,7 @@
     width: 100%;
 }
 
-#string{
-    /* background-color: red; */
-    padding: 2vw 0;
-    width: 73vw;
-    height: 21.1vh;
-    margin: auto;
-    
-}
 
-#string svg{
-    margin: auto;
-    /* background-color: green; */
-    width:100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#string svg path{
-    stroke-width: 0.2vw;
-}
 
 
 
@@ -186,6 +165,7 @@
     transform: translate(-50%, -50%);
     /* background-color: red; */
 }
+
 .events .events-container .event img{
     width: 15vw;
     border-radius: 1vw;

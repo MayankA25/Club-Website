@@ -1,0 +1,86 @@
+footer{
+    padding: 2vw 0;
+}
+
+.divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider #string{
+    width: 50%;
+    height: 0.2vw;
+    background-color: white;
+}
+
+.divider img{
+    width: 4vw;
+}
+
+
+.footer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer img{
+    width: 25vw;
+}
+
+.footer .icons a{
+    cursor: none;
+}
+
+.footer .icons a i{
+    color: white;
+    font-size: 2vw;
+    margin: 0 2vw;
+    /* pointer-events: none; */
+    /* cursor: none; */
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.footer .icons i:hover{
+    transform: scale(1.1);
+}
+
+.icons .insta:hover{
+    transition: all 0.5s;
+    color: rgb(255, 0, 157);
+}
+
+.icons .insta:not(:hover){
+    transition: all 0.5s;
+    color: rgba(255, 255, 255, 0.3);
+}
+.icons .x:hover{
+    transition: all 0.5s;
+    color: white;
+}
+
+.icons .x:not(:hover){
+    transition: all 0.5s;
+    color: rgba(255, 255, 255, 0.3);
+}
+.icons .linkedin:hover{
+    transition: all 0.5s;
+    color: rgb(70, 70, 253);
+}
+
+.icons .linkedin:not(:hover){
+    transition: all 0.5s;
+    color: rgba(255, 255, 255, 0.3);
+}
+.icons .github:hover{
+    transition: all 0.5s;
+    color: white;
+}
+
+.icons .github:not(:hover){
+    transition: all 0.5s;
+    color: rgba(255, 255, 255, 0.3);
+}

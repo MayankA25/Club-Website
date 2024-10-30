@@ -2,7 +2,10 @@ let preloader = document.getElementsByClassName("preloader")[0];
 let body = document.getElementsByTagName("body")[0];
 let video = document.getElementsByClassName("video")[0];
 let main = document.getElementsByTagName("main")[0];
-let stringElem = document.querySelector("#string");
+// let stringElem = document.querySelector("#string");
+let events = document.getElementsByClassName("events")[0]
+let footer = document.getElementsByTagName("footer")[0]
+
 
 function removePreloader() {
   gsap.to(".box", {
@@ -108,6 +111,7 @@ function videoAnimation() {
         trigger: "video",
         // markers : true,
         end: "top 20%",
+        start: "top 85%",
         scrub: 1,
       },
     }
@@ -121,7 +125,9 @@ function showMainContent() {
   //     onComplete: ()=>{
   body.style.overflowY = "visible";
   video.style.display = "flex";
-  stringElem.style.display = "flex";
+  events.style.display = "block"
+  footer.style.display = "block"
+//   stringElem.style.display = "flex";
   showText();
   videoAnimation();
   //         }
@@ -153,23 +159,23 @@ function loadPage() {
   });
 }
 
-let string = () => {
-  stringElem.addEventListener("mousemove", (e) => {
-    console.log(e);
-    gsap.to("#string svg path", {
-      duration: 0.1,
-      attr: { d: `M 0 150 Q ${e.x} ${-(780 - e.y)} 1400 150` },
-    });
-  });
+// let string = () => {
+//   stringElem.addEventListener("mousemove", (e) => {
+//     console.log(e);
+//     gsap.to("#string svg path", {
+//       duration: 0.1,
+//       attr: { d: `M 0 150 Q ${e.x} ${-(780 - e.y)} 1400 150` },
+//     });
+//   });
 
-  stringElem.addEventListener("mouseleave", () => {
-    gsap.to("#string svg path", {
-      duration: 0.5,
-      attr: { d: "M 0 150 Q 700 150 1400 150" },
-      ease: "elastic.out(1.75, 0.2)",
-    });
-  });
-};
+//   stringElem.addEventListener("mouseleave", () => {
+//     gsap.to("#string svg path", {
+//       duration: 0.5,
+//       attr: { d: "M 0 150 Q 700 150 1400 150" },
+//       ease: "elastic.out(1.75, 0.2)",
+//     });
+//   });
+// };
 
 function showHideFullNavbar() {
   let nav2 = document.getElementsByClassName("nav-2")[0];
@@ -260,81 +266,133 @@ function showHideFullNavbar() {
 }
 
 let eventAnimate = () => {
-  let lefts = document.getElementsByClassName(".left");
-
-  gsap.from(".left-1",{
-    opacity:0,
-    x:"-100%",
-    delay:0.25,
-    duration: 1.5,
-    scrollTrigger: {
-        trigger:  ".left-1"
+  gsap.from(".events h1", {
+    opacity: 0,
+    y: "-100%",
+    duration : 0.5,
+    scrollTrigger:{
+      trigger: ".events h1",
+      // scrub:true
     }
   })
-  gsap.from(".left-2",{
-    opacity:0,
-    x:"-100%",
-    delay:0.25,
-    duration: 1.5,
-    scrollTrigger: {
-        trigger:  ".left-2"
+  gsap.fromTo(".left-1", {
+    opacity: 0
+  }, {
+    opacity: 1,
+    // duration: 0.5,
+    delay: 0.5,
+    scrollTrigger:{
+      trigger: ".left-1",
+      // markers: true,
+      scrub: 1,
+      end: 'top 50%',
+      start: "top 85%"
     }
   })
-  gsap.from(".left-3",{
-    opacity:0,
-    x:"-100%",
-    delay:0.25,
-    duration: 1.5,
-    scrollTrigger: {
-        trigger:  ".left-3"
+  gsap.fromTo(".right-1", {
+    opacity: 0,
+    // x: "100%"
+  }, {
+    opacity: 1,
+    // duration: 0.5,
+    // x:0,
+    delay: 0.5,
+    scrollTrigger:{
+      trigger: ".right-1",
+      // markers: true,
+      scrub: 1,
+      end: 'top 50%',
+      start: "top 85%"
     }
   })
-  gsap.from(".left-4",{
-    opacity:0,
-    x:"-100%",
-    delay:0.25,
-    duration: 1.5,
-    scrollTrigger: {
-        trigger:  ".left-4"
+  gsap.fromTo(".left-2", {
+    opacity: 0
+  }, {
+    opacity: 1,
+    // duration: 0.5,
+    delay: 0.5,
+    scrollTrigger:{
+      trigger: ".left-2",
+      // markers: true,
+      scrub: 1,
+      end: 'top 50%',
+      start: "top 85%"
     }
   })
-
-
-
-  gsap.from(".right-1",{
-    opacity:0,
-    x:"100%",
-    delay:0.25,
-    duration: 1.5,
-    scrollTrigger: {
-        trigger:  ".right-1"
+  gsap.fromTo(".right-2", {
+    opacity: 0,
+    // x: "100%"
+  }, {
+    opacity: 1,
+    // duration: 0.5,
+    // x:0,
+    delay: 0.5,
+    scrollTrigger:{
+      trigger: ".right-2",
+      // markers: true,
+      scrub: 1,
+      end: 'top 50%',
+      start: "top 85%"
     }
   })
-  gsap.from(".right-2",{
-    opacity:0,
-    x:"100%",
-    delay:0.25,
-    duration: 1.5,
-    scrollTrigger: {
-        trigger:  ".right-2"
+  gsap.fromTo(".left-3", {
+    opacity: 0
+  }, {
+    opacity: 1,
+    // duration: 0.5,
+    delay: 0.5,
+    scrollTrigger:{
+      trigger: ".left-3",
+      // markers: true,
+      scrub: 1,
+      end: 'top 50%',
+      start: "top 85%"
     }
   })
-  gsap.from(".right-3",{
-    opacity:0,
-    x:"100%",
-    delay:0.25,
-    duration: 1.5,
-    scrollTrigger: {
-        trigger:  ".right-3"
+  gsap.fromTo(".right-3", {
+    opacity: 0,
+    // x: "100%"
+  }, {
+    opacity: 1,
+    // duration: 0.5,
+    // x:0,
+    delay: 0.5,
+    scrollTrigger:{
+      trigger: ".right-3",
+      // markers: true,
+      scrub: 1,
+      end: 'top 50%',
+      start: "top 85%"
     }
   })
-  gsap.from(".right-4",{
-    opacity:0,
-    x:"100%",
-    delay:0.25,
-    duration: 1.5,
-    scrollTrigger: {
-        trigger:  ".right-4"
+  gsap.fromTo(".left-4", {
+    opacity: 0
+  }, {
+    opacity: 1,
+    // duration: 0.5,
+    delay: 0.5,
+    scrollTrigger:{
+      trigger: ".left-4",
+      // markers: true,
+      scrub: 1,
+      end: 'top 50%',
+      start: "top 85%"
+    }
+  })
+  gsap.fromTo(".right-4", {
+    opacity: 0,
+    // x: "100%"
+  }, {
+    opacity: 1,
+    // duration: 0.5,
+    // x:0,
+    delay: 0.5,
+    scrollTrigger:{
+      trigger: ".right-4",
+      // markers: true,
+      scrub: 1,
+      end: 'top 50%',
+      start: "top 100%"
     }
   })
 };
@@ -342,7 +400,9 @@ let eventAnimate = () => {
 window.onload = () => {
   body.style.overflowY = "hidden";
   video.style.display = "none";
-  stringElem.style.display = "none";
+  events.style.display = "none"
+  footer.style.display = "none"
+//   stringElem.style.display = "none";
   window.scrollTo(0, 0);
 };
 window.addEventListener("DOMContentLoaded", () => {
@@ -350,7 +410,7 @@ window.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     showMainContent();
   }, 4700);
-  string();
+//   string();
   showHideFullNavbar();
   eventAnimate();
 });
