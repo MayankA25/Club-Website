@@ -24,6 +24,7 @@ body{
     /* background-size: cover; */
     display: flex;
     /* z-index: -3; */
+    align-items: center;
 }
 
 .preloader .box{
