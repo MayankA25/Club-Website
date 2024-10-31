@@ -10,7 +10,7 @@ header{
     font-style: normal;
 }
 header .nav-1{
-    padding: 0.5vw 0;
+    padding: 1.5vh 0;
     background-color: rgba(0,0,0,0.2);
     backdrop-filter: blur(25px);
 }
@@ -22,10 +22,10 @@ header .nav-1 .short{
     align-items: center;
 }
 header .nav-1 .short img{
-    width: 5vw;
+    width: 9vh;
 }
 header .nav-1 .short i{
-    font-size: 3vw;
+    font-size: 5vh;
     opacity: 0;
     /* cursor: pointer; */
     /* background-color: red; */
@@ -53,20 +53,21 @@ header .nav-1 .short i{
     position: absolute;
     top: 4%;
     right: 10%;
-    font-size: 2.5vw;
+    font-size: 5vh;
     border-radius: 90px;
     /* display: none; */
     opacity: 0;
     color: white;
+    margin: 1vw 0;
 }
  .nav-2 i:hover{
     color: #fff1db;
     transition: all 0.3s;
-    font-size: 3vw;
+    font-size: 5vh;
 }
 
 .nav-2 i:not(:hover){
-    font-size: 2.5vw;
+    font-size: 4.5vh;
     transition: all 0.3s;
 }
 
@@ -74,14 +75,14 @@ header .nav-1 .short i{
     padding: 1vw 0;
     /* background-color: red; */
     width: 80%;
-    margin: auto;
+    margin: 5vw auto;
     font-family: "Spicy Rice", serif;
     font-weight: 400;
     font-style: normal;
 }
 .nav-2 .full h1{
     opacity: 0;
-    font-size: 4vw;
+    /* font-size: 5vw; */
     margin-bottom: 3vw;
     overflow: hidden;
     
@@ -91,6 +92,7 @@ header .nav-1 .short i{
     color: white;
     text-decoration: none;
     cursor: none;
+    font-size: 5vh;
 }
 .nav-2 .full h1:hover{
     transition: all 0.3s;

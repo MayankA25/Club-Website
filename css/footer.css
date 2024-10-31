@@ -24,7 +24,7 @@ footer{
 }
 
 .divider img{
-    width: 4vw;
+    width:7vh;
 }
 
 
@@ -37,7 +37,7 @@ footer{
 }
 
 .footer img{
-    width: 25vw;
+    width: 30vh;
 }
 
 .footer .icons a{
@@ -46,7 +46,7 @@ footer{
 
 .footer .icons a i{
     color: white;
-    font-size: 2vw;
+    font-size: 3.5vh;
     margin: 0 2vw;
     /* pointer-events: none; */
     /* cursor: none; */

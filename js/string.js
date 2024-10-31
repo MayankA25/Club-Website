@@ -1,32 +1,46 @@
-let string1 = document.getElementsByClassName("string-1")[0]
-let string2 = document.getElementsByClassName("string-2")[0]
+// let string1 = document.getElementsByClassName("string-1")[0]
+// let string2 = document.getElementsByClassName("string-2")[0]
+
+let string1 = document.getElementsByClassName("svg-1")[0]
+let string2 = document.getElementsByClassName("svg-2")[0]
+
+
 
 let path1 = "M 0 80 Q 475 80 950 80"
 let path2 = "M 0 80 Q 475 80 950 80"
 string1.addEventListener("mousemove", (e)=>{
-    let posX = e.clientX;
-    let posY = e.clientY;
 
-    console.log(posX, posY)
+    console.log(window.innerWidth, window.innerHeight)
 
+    if(window.innerWidth >= 1100){
 
-    gsap.to(".string-1 svg path", {
-        duration : 0.20,
-        attr:{ d:`M 0 80 Q ${e.x} ${-(675-e.y)} 950 80` },
-    })
+        let posX = e.clientX;
+        let posY = e.clientY;
+        
+        console.log(posX, posY)
+        
+        
+        gsap.to(".string-1 svg path", {
+            duration : 0.20,
+            attr:{ d:`M 0 80 Q ${e.x} ${-(675-e.y)} 950 80` },
+        })
+    }
 
 })
 string2.addEventListener("mousemove", (e)=>{
-    let posX = e.clientX;
-    let posY = e.clientY;
+    if(window.innerWidth >= 1100){
 
-    console.log(posX, posY)
-
-
-    gsap.to(".string-2 svg path", {
-        duration : 0.20,
-        attr:{ d:`M 0 80 Q ${-(950-e.x)} ${-(675-e.y)} 950 80` },
-    })
+        let posX = e.clientX;
+        let posY = e.clientY;
+        
+        console.log(posX, posY)
+        
+        
+        gsap.to(".string-2 svg path", {
+            duration : 0.20,
+            attr:{ d:`M 0 80 Q ${-(950-e.x)} ${-(675-e.y)} 950 80` },
+        })
+    }
 
 })
 

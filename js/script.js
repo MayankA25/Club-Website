@@ -1,11 +1,12 @@
 let preloader = document.getElementsByClassName("preloader")[0];
 let body = document.getElementsByTagName("body")[0];
 let video = document.getElementsByClassName("video")[0];
+let actualVideo = document.getElementsByTagName("video")[0]
 let main = document.getElementsByTagName("main")[0];
 // let stringElem = document.querySelector("#string");
 let events = document.getElementsByClassName("events")[0]
 let footer = document.getElementsByTagName("footer")[0]
-
+let mainContent = document.getElementsByClassName("main-content")[0]
 
 function removePreloader() {
   gsap.to(".box", {
@@ -98,25 +99,32 @@ function showText() {
 }
 
 function videoAnimation() {
-  gsap.fromTo(
-    ".video video",
-    {
-      width: "20%",
-    },
-    {
-      width: "100%",
-      duration: 0.5,
-      attr: { autoplay: "autoplay" },
-      scrollTrigger: {
-        trigger: "video",
-        // markers : true,
-        end: "top 20%",
-        start: "top 85%",
-        scrub: 1,
-      },
-    }
-  );
+      if(window.innerWidth > 900){
+
+        gsap.fromTo(
+          
+          ".video video",
+          {
+            width: "20%",
+          },
+          {
+            width: "100%",
+            duration: 0.5,
+            attr: { autoplay: "autoplay" },
+            scrollTrigger: {
+              trigger: "video",
+              // markers : true,
+              end: "top 20%",
+              start: "top 85%",
+              scrub: 1,
+            },
+          }
+        );
+      }
+
+
 }
+  
 function showMainContent() {
   // gsap.from(".main-content", {
   //     scale: "0.2",
@@ -127,9 +135,11 @@ function showMainContent() {
   video.style.display = "flex";
   events.style.display = "block"
   footer.style.display = "block"
+  mainContent.style.display = "block"
 //   stringElem.style.display = "flex";
   showText();
   videoAnimation();
+  // checkVideo()
   //         }
   //         })
 }
@@ -398,12 +408,14 @@ let eventAnimate = () => {
 };
 
 window.onload = () => {
+  body.style.backgroundColor = "black"
   body.style.overflowY = "hidden";
   video.style.display = "none";
   events.style.display = "none"
   footer.style.display = "none"
 //   stringElem.style.display = "none";
   window.scrollTo(0, 0);
+  mainContent.style.display = "none"
 };
 window.addEventListener("DOMContentLoaded", () => {
   loadPage();

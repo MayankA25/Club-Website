@@ -22,7 +22,7 @@ header{
     font-style: normal;
 }
 
-header nav{
+header {
     width: 85%;
     margin: auto;
     display: flex;
@@ -31,7 +31,7 @@ header nav{
 }
 
 header nav img{
-    width: 4vw;
+    width: 10vh;
 }
 
 header nav ul{
