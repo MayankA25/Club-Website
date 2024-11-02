@@ -22,7 +22,7 @@ string1.addEventListener("mousemove", (e)=>{
         
         gsap.to(".string-1 svg path", {
             duration : 0.20,
-            attr:{ d:`M 0 80 Q ${e.x} ${-(675-e.y)} 950 80` },
+            attr:{ d:`M 0 80 Q ${e.x} ${-(725-e.y)} 950 80` },
         })
     }
 
@@ -38,7 +38,7 @@ string2.addEventListener("mousemove", (e)=>{
         
         gsap.to(".string-2 svg path", {
             duration : 0.20,
-            attr:{ d:`M 0 80 Q ${-(950-e.x)} ${-(675-e.y)} 950 80` },
+            attr:{ d:`M 0 80 Q ${-(950-e.x)} ${-(725-e.y)} 950 80` },
         })
     }
 

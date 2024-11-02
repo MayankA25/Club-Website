@@ -417,6 +417,28 @@ window.onload = () => {
   window.scrollTo(0, 0);
   mainContent.style.display = "none"
 };
+
+
+let showFooter = ()=>{
+  gsap.from(".footer img", {
+    opacity: 0,
+    x: "-100%",
+    duration: 0.75,
+    scrollTrigger:{
+      trigger: ".footer img"
+    }
+  })
+
+  gsap.from(".footer .icons a", {
+    opacity: 0, 
+    // y: "100%", 
+    stagger: 0.25,
+    duration: 0.5,
+    scrollTrigger:{
+      trigger: ".footer .icons a"
+    }
+  })
+}
 window.addEventListener("DOMContentLoaded", () => {
   loadPage();
   setTimeout(() => {
@@ -425,4 +447,5 @@ window.addEventListener("DOMContentLoaded", () => {
 //   string();
   showHideFullNavbar();
   eventAnimate();
+  showFooter()
 });
